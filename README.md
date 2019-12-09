@@ -1,29 +1,21 @@
 # t-navigation
 
-## Project setup
+## 使用
+App.vue
+第1步：导入混入
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
+import navigationMixin from "./minxins/Navigation";
+    export default {
+        mixins: [navigationMixin],
+    }
 ```
 
-### Run your tests
+第二步：
+keep-alive 绑定 :include="navigationArr"
 ```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
+<keep-alive :include="navigationArr">
+    <router-view/>
+</keep-alive>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
