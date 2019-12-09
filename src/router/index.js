@@ -20,17 +20,17 @@ const routes = [
     },
     {
         path: '/input1',
-        name: 'input1',
+        name: 'Input11',
         component: () => import(/* webpackChunkName: "about" */ '../views/Input1.vue')
     },
     {
         path: '/input2',
-        name: 'input2',
+        name: 'Input22',
         component: () => import(/* webpackChunkName: "about" */ '../views/Input2.vue')
     },
     {
         path: '/input3',
-        name: 'input3',
+        name: 'Input33',
         component: () => import(/* webpackChunkName: "about" */ '../views/Input3.vue')
     }
 ]
